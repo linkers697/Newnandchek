@@ -43,7 +43,7 @@
 <div align="center">
   
   ### 🔥 Deploy to Heroku
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/musicbhai/Newnand">
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/linkers697/Newnandchek">
     <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-FF0080?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000080" width="280px" alt="Deploy to Heroku">
   </a>
   
