@@ -39,7 +39,7 @@ BG_BRIGHTNESS = 1
 
 LIME_BORDER = (158, 255, 49, 255)
 RING_COLOR  = (98, 193, 169, 255)
-TEXT_WHITE  = (245, 245, 245, 255)
+TEXT_RED  = (245, 245, 245, 255)
 TEXT_SOFT   = (230, 230, 230, 255)
 TEXT_SHADOW = (0, 0, 0, 140)
 
@@ -156,7 +156,7 @@ async def gen_thumb(videoid: str):
         # top-left label
         tl_font = ImageFont.truetype(FONT_BOLD_PATH, 34)
         draw.text((28+1, 18+1), "AsianBots", fill=TEXT_SHADOW, font=tl_font)
-        draw.text((28, 18), "AsianBots", fill=TEXT_WHITE, font=tl_font)
+        draw.text((28, 18), "AsianBots", fill=TEXT_RED, font=tl_font)
 
         # right text block
         info_x = circle_x + thumb_size + 60
@@ -169,13 +169,13 @@ async def gen_thumb(videoid: str):
         np_x = info_x + (max_text_w - np_w) // 2 - 95
         np_y = circle_y + 30  
         draw.text((np_x+2, np_y+2), np_text, fill=TEXT_SHADOW, font=np_font)
-        draw.text((np_x, np_y), np_text, fill=TEXT_WHITE, font=np_font)
+        draw.text((np_x, np_y), np_text, fill=TEXT_RED, font=np_font)
 
         # TITLE
         title_font, title_wrapped = fit_title_two_lines(draw, title, max_text_w, FONT_BOLD_PATH, start_size=30, min_size=30)
         title_y = np_y + 110   
         draw.multiline_text((info_x+2, title_y+2), title_wrapped, fill=TEXT_SHADOW, font=title_font, spacing=8)
-        draw.multiline_text((info_x, title_y),     title_wrapped, fill=TEXT_WHITE,  font=title_font, spacing=8)
+        draw.multiline_text((info_x, title_y),     title_wrapped, fill=TEXT_RED,  font=title_font, spacing=8)
 
         # Meta lines
         meta_font = ImageFont.truetype(FONT_REGULAR_PATH, 30)
