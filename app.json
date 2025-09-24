@@ -44,12 +44,12 @@
     },
     "BOT_USERNAME": {
       "description": "The username of your bot (without @)",
-      "value": "vcsongbot",
+      "value": "Checkurbot",
       "required": true
     },
     "UPSTREAM_REPO": {
       "description": "URL of your GitHub repository",
-      "value": "https://github.com/musicbhai/Newnand",
+      "value": "https://github.com/linkers697/Newnandchek",
       "required": false
     },
     "STRING_SESSION": {
